@@ -18,71 +18,72 @@ Designed to simulate real-world recommendation and personalization systems
 
 ## Project Structure
 multimodal_interest_prediction/
+
 ├── data/
 
-│   ├── build_dataset.py          - Download & extract video/audio/text features
+   ├── build_dataset.py          - Download & extract video/audio/text features
 
-│   ├── preprocess_video.py       - Frame extraction logic
+   ├── preprocess_video.py       - Frame extraction logic
 
-│   ├── preprocess_audio.py       - Audio feature extraction logic
+   ├── preprocess_audio.py       - Audio feature extraction logic
 
-│   ├── preprocess_text.py        - Text preprocessing logic
+   ├── preprocess_text.py        - Text preprocessing logic
 
-│   ├── simulate_user_logs.py     - Generates simulated user interaction logs
+   ├── simulate_user_logs.py     - Generates simulated user interaction logs
 
-│   ├── videos/                   - Downloaded raw videos
+   ├── videos/                   - Downloaded raw videos
 
-│   ├── audios/                   - Extracted audio files
+   ├── audios/                   - Extracted audio files
 
-│   └── features/                 - Saved feature files (frames, audio_feats, text_ids)
+   └── features/                 - Saved feature files (frames, audio_feats, text_ids)
 
-│
 
-├── models/
 
-│   ├── video_encoder.py
+│── models/
 
-│   ├── audio_encoder.py
+   ├── video_encoder.py
 
-│   ├── text_encoder.py
+   ├── audio_encoder.py
 
-│   ├── user_sequence_encoder.py
+   ├── text_encoder.py
 
-│   └── fusion_predictor.py
+   ├── user_sequence_encoder.py
+
+   └── fusion_predictor.py
 
 │
 
 ├── utils/
 
-│   └── user_embedding.py        - Generates user embeddings from logs
+   └── user_embedding.py        - Generates user embeddings from logs
 
-│
+
 
 ├── training/
 
-│   └── train_multimodal.py      - Main training script using real data
+   └── train_multimodal.py      - Main training script using real data
 
-│
+
 
 ├── pipeline/
 
-│   ├── inference_service.py     - FastAPI serving endpoint using real features and logs
+   ├── inference_service.py     - FastAPI serving endpoint using real features and logs
 
-│   └── streaming_consumer.py    - Kafka consumer for real-time logs
+   └── streaming_consumer.py    - Kafka consumer for real-time logs
 
-│
+
 
 ├── visualization/
 
-│   ├── dashboard.py             - Streamlit UI for live predictions
+   ├── dashboard.py             - Streamlit UI for live predictions
 
-│   ├── visualize_embeddings.py  - t-SNE visualization
+   ├── visualize_embeddings.py  - t-SNE visualization
 
-│   └── visualize_feature_maps.py - Feature map visualization
+   └── visualize_feature_maps.py - Feature map visualization
 
-│   └── analyze_ab_logs.py       - A/B logs visualization
+   └── analyze_ab_logs.py       - A/B logs visualization
 
-│
+
 
 ├── Dockerfile                   - Containerization support
 
