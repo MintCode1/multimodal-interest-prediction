@@ -17,7 +17,8 @@ Designed to simulate real-world recommendation and personalization systems like 
 - Streamlit dashboard for live demo
 
 ## Project Structure
-multimodal_interest_prediction/
+multimodal_interest_prediction:
+
 │ ── data:
 
 │   ── build_dataset.py          # Download & extract video/audio/text features
