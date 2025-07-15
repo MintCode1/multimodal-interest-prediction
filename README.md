@@ -18,7 +18,7 @@ Designed to simulate real-world recommendation and personalization systems like 
 
 ## Project Structure
 multimodal_interest_prediction/
-│ ── data/
+│ ── data:
 
 │   ── build_dataset.py          # Download & extract video/audio/text features
 
@@ -30,13 +30,13 @@ multimodal_interest_prediction/
 
 │   ── simulate_user_logs.py     # Generates simulated user interaction logs
 
-│   ── videos/                   # Downloaded raw videos
+│   ── videos/                   # Downloaded raw videos (created with data)
 
-│   ── audios/                   # Extracted audio files
+│   ── audios/                   # Extracted audio files (created with data)
 
 │   ── features/                 # Saved feature files (frames, audio_feats, text_ids)
 
-│ ── models/
+│ ── models:
 
 │   ── video_encoder.py
 
@@ -48,21 +48,21 @@ multimodal_interest_prediction/
 
 │   ── fusion_predictor.py
 
-│ ── utils/
+│ ── utils:
 
 │   ── user_embedding.py        # Generates user embeddings from logs
 
-│ ── training/
+│ ── training:
 
 │   ── train_multimodal.py      # Main training script using real data
 
-│ ── pipeline/
+│ ── pipeline:
 
 │   ── inference_service.py     # FastAPI serving endpoint using real features and logs
 
 │   ── streaming_consumer.py    # Kafka consumer for real-time logs
 
-│ ── visualization/
+│ ── visualization:
 
 │   ── dashboard.py             # Streamlit UI for live predictions
 
