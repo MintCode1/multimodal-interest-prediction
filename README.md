@@ -37,33 +37,61 @@ multimodal_interest_prediction/
 │   └── features/                 - Saved feature files (frames, audio_feats, text_ids)
 
 │
+
 ├── models/
+
 │   ├── video_encoder.py
+
 │   ├── audio_encoder.py
+
 │   ├── text_encoder.py
+
 │   ├── user_sequence_encoder.py
+
 │   └── fusion_predictor.py
+
 │
+
 ├── utils/
-│   └── user_embedding.py        # Generates user embeddings from logs
+
+│   └── user_embedding.py        - Generates user embeddings from logs
+
 │
+
 ├── training/
-│   └── train_multimodal.py      # Main training script using real data
+
+│   └── train_multimodal.py      - Main training script using real data
+
 │
+
 ├── pipeline/
-│   ├── inference_service.py     # FastAPI serving endpoint using real features and logs
-│   └── streaming_consumer.py    # Kafka consumer for real-time logs
+
+│   ├── inference_service.py     - FastAPI serving endpoint using real features and logs
+
+│   └── streaming_consumer.py    - Kafka consumer for real-time logs
+
 │
+
 ├── visualization/
-│   ├── dashboard.py             # Streamlit UI for live predictions
-│   ├── visualize_embeddings.py  # t-SNE visualization
-│   └── visualize_feature_maps.py # Feature map visualization
-│   └── analyze_ab_logs.py       # A/B logs visualization
+
+│   ├── dashboard.py             - Streamlit UI for live predictions
+
+│   ├── visualize_embeddings.py  - t-SNE visualization
+
+│   └── visualize_feature_maps.py - Feature map visualization
+
+│   └── analyze_ab_logs.py       - A/B logs visualization
+
 │
-├── Dockerfile                   # Containerization support (optional)
-├── docker-compose.yml           # Docker setup with Kafka (optional)
-├── requirements.txt            # Python dependencies
+
+├── Dockerfile                   - Containerization support
+
+├── docker-compose.yml           - Docker setup with Kafka
+
+├── requirements.txt            - Python dependencies
+
 ├── README.md                   
+
 └── main.py                     
 
 ## Possible Improvements
