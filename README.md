@@ -19,9 +19,13 @@ Designed to simulate real-world recommendation and personalization systems
 ## Project Structure
 multimodal_interest_prediction/
 ├── data/
+
 │   ├── build_dataset.py          # Download & extract video/audio/text features
+
 │   ├── preprocess_video.py       # Frame extraction logic
+
 │   ├── preprocess_audio.py       # Audio feature extraction logic
+
 │   ├── preprocess_text.py        # Text preprocessing logic
 │   ├── simulate_user_logs.py     # Generates simulated user interaction logs
 │   ├── videos/                   # Downloaded raw videos
