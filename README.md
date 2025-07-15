@@ -18,7 +18,7 @@ Designed to simulate real-world recommendation and personalization systems like 
 
 ## Project Structure
 multimodal_interest_prediction/
-├── data/
+│ ── data/
 
 │   ── build_dataset.py          # Download & extract video/audio/text features
 
@@ -36,7 +36,7 @@ multimodal_interest_prediction/
 
 │   ── features/                 # Saved feature files (frames, audio_feats, text_ids)
 
-├── models/
+│ ── models/
 
 │   ── video_encoder.py
 
@@ -48,21 +48,21 @@ multimodal_interest_prediction/
 
 │   ── fusion_predictor.py
 
-├── utils/
+│ ── utils/
 
 │   ── user_embedding.py        # Generates user embeddings from logs
 
-├── training/
+│ ── training/
 
 │   ── train_multimodal.py      # Main training script using real data
 
-├── pipeline/
+│ ── pipeline/
 
 │   ── inference_service.py     # FastAPI serving endpoint using real features and logs
 
 │   ── streaming_consumer.py    # Kafka consumer for real-time logs
 
-├── visualization/
+│ ── visualization/
 
 │   ── dashboard.py             # Streamlit UI for live predictions
 
@@ -72,15 +72,15 @@ multimodal_interest_prediction/
 
 │   ── analyze_ab_logs.py       # A/B logs visualization
 
-├── Dockerfile                   # Containerization support 
+│ ── Dockerfile                   # Containerization support 
 
-├── docker-compose.yml           # Docker setup with Kafka
+│ ── docker-compose.yml           # Docker setup with Kafka
 
-├── requirements.txt            # Python dependencies
+│ ── requirements.txt            # Python dependencies
 
-├── README.md                   
+│ ── README.md                   
 
-└── main.py                     
+│ ── main.py                     
 
 ## Possible Improvements
 - Use advanced pretrained video encoders
