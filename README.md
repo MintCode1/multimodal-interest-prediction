@@ -36,8 +36,6 @@ multimodal_interest_prediction/
 
 │   ── features/                 # Saved feature files (frames, audio_feats, text_ids)
 
-│
-
 ├── models/
 
 │   ── video_encoder.py
@@ -50,26 +48,19 @@ multimodal_interest_prediction/
 
 │   ── fusion_predictor.py
 
-│
-
 ├── utils/
 
 │   ── user_embedding.py        # Generates user embeddings from logs
 
-│
 ├── training/
 
 │   ── train_multimodal.py      # Main training script using real data
-
-│
 
 ├── pipeline/
 
 │   ── inference_service.py     # FastAPI serving endpoint using real features and logs
 
 │   ── streaming_consumer.py    # Kafka consumer for real-time logs
-
-│
 
 ├── visualization/
 
@@ -80,8 +71,6 @@ multimodal_interest_prediction/
 │   ── visualize_feature_maps.py # Feature map visualization
 
 │   ── analyze_ab_logs.py       # A/B logs visualization
-
-│
 
 ├── Dockerfile                   # Containerization support 
 
