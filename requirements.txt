@@ -1,0 +1,10 @@
+torch
+torchvision
+torchaudio
+transformers
+pandas
+opencv-python
+librosa
+fastapi
+uvicorn
+kafka-python
