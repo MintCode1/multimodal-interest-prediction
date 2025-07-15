@@ -20,17 +20,22 @@ Designed to simulate real-world recommendation and personalization systems
 multimodal_interest_prediction/
 ├── data/
 
-│   ├── build_dataset.py          # Download & extract video/audio/text features
+│   ├── build_dataset.py          - Download & extract video/audio/text features
 
-│   ├── preprocess_video.py       # Frame extraction logic
+│   ├── preprocess_video.py       - Frame extraction logic
 
-│   ├── preprocess_audio.py       # Audio feature extraction logic
+│   ├── preprocess_audio.py       - Audio feature extraction logic
 
-│   ├── preprocess_text.py        # Text preprocessing logic
-│   ├── simulate_user_logs.py     # Generates simulated user interaction logs
-│   ├── videos/                   # Downloaded raw videos
-│   ├── audios/                   # Extracted audio files
-│   └── features/                 # Saved feature files (frames, audio_feats, text_ids)
+│   ├── preprocess_text.py        - Text preprocessing logic
+
+│   ├── simulate_user_logs.py     - Generates simulated user interaction logs
+
+│   ├── videos/                   - Downloaded raw videos
+
+│   ├── audios/                   - Extracted audio files
+
+│   └── features/                 - Saved feature files (frames, audio_feats, text_ids)
+
 │
 ├── models/
 │   ├── video_encoder.py
